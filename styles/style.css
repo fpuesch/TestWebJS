@@ -1,0 +1,295 @@
+header {
+    background-color: #ff8008;
+    height: 50px; 
+    padding-left: 20px; 
+    padding-right: 40px;  
+    display:flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.content_wrapper {
+    gap:2px; 
+    display: flex; 
+    flex-direction: row;
+    flex-grow: 1;
+    max-width: 2000px; 
+    
+}
+
+
+.content{
+    width: calc(100% - 300px);
+    background-image: url(./img/background-pizza.jpg);
+    background-size: cover;
+    height:100vh; 
+    box-sizing: border-box;
+    
+    
+}
+
+.restaurant_info {
+    margin-top: 400px; 
+    height: 120px; 
+    background-color: whitesmoke;
+    padding-left: 20px; 
+    padding-top: 10px;     
+}
+
+
+.restaurant_info p {
+    color: #ff8008;
+    font-weight: bold;
+    padding-top: 20px; 
+}
+
+.nav_bar {
+    background-color: bisque;
+    height: 40px; 
+    color: grey; 
+    font-weight: bold;
+    padding-left: 10px; 
+    display:flex;
+    align-items: center; 
+    gap: 15px; 
+}
+
+.pizza_img {
+    height: 120px; 
+    width: 100% ;
+    object-fit: cover;
+    padding-left: 10px; 
+    box-sizing: border-box;
+}
+
+.main_dishes {
+    background-color: whitesmoke;
+    width: 100%; 
+    height: auto; 
+    box-sizing: border-box;
+}
+
+.dish_info {
+    padding-top: 10px; 
+    padding-left: 10px;
+}
+
+.dish_container:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.price {
+    color: #ff8008;
+    font-weight: bold; 
+    padding-top: 15px; 
+    padding-bottom: 10px; 
+}
+
+.dish_container {
+    display: flex;
+    justify-content: space-between; 
+    margin-left: 10px; 
+    margin-top: 10px; 
+    border:solid;
+    border-width: thin;
+    border-color: rgb(173, 170, 170);  
+}
+
+.basket {
+    width:100%; 
+    position: sticky; 
+    top:0; 
+    box-shadow: 0 0px 3px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    /* box-shadow: 0 0 0 2px rgb(0 0 0 / 10%); */
+}
+
+.basket_wrapper {
+    width:300px; 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; 
+}
+
+.piece {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; 
+}
+
+.piece h4 {
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.amount {
+    display: flex;
+    justify-content:space-between;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    padding-bottom: 10px; 
+}
+
+.total {
+    font-size: 16px;
+    color:rgb(90, 89, 89);
+}
+
+footer {
+    height: 100px; 
+    background-color:  #ff8008;
+    margin-bottom: 0px; 
+    margin-top: 800px; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+    color:white; 
+    text-decoration: none;
+    gap: 200px; 
+    font-size: 20px;
+}
+
+.info-footer {
+    display: flex;
+    align-items:center; 
+    justify-content:space-around; 
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:orangered;
+    text-decoration:underline;
+}
+
+.impressum {
+    padding-top: 100px; 
+    padding-left: 400px; 
+    height: 440px; 
+    font-size: 20px;
+    display:flex; 
+    flex-direction: column; 
+    text-align:left;
+}
+
+.impressum p {
+    padding-top:5px; 
+}
+
+.impressum h2 {
+    padding-bottom:15px; 
+}
+
+.impressum a {
+text-decoration:none;
+color: orange;
+}
+
+.impressum a:hover {
+color:orangered;
+text-decoration:underline;
+}
+
+.data-protection {
+    height: 539px; 
+    width: 100%; 
+    font-size: 20px;
+    display:flex; 
+    flex-direction: column;
+    align-items:center; 
+    justify-content: center;
+    text-decoration:none;
+}
+
+.data-protection p {
+    width: 80%;
+    max-width: 1920px;
+    padding-top:20px; 
+}
+
+.costs {
+    border-top:thick double #d3d3d3;
+    padding-top: 20px; 
+    padding-bottom: 40px; 
+    display:flex; 
+    flex-direction: column;
+    color: grey; 
+    gap: 5px; 
+    padding-right: 5px; 
+    padding-left: 5px; 
+}
+
+.row {
+    display:flex; 
+    justify-content: space-between;
+}
+
+.thank_you_4_order {
+    font-size: 20px; 
+    height:300px;
+    width:400px; 
+    padding-right: 30px; 
+    padding-left: 30px; 
+    padding-bottom: 75px; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px; 
+    border:solid;
+    border-width: thick;
+    border-color:  #28abda; 
+    background-color: white;
+}
+
+.overlay {
+    position:absolute;
+    top:0;
+    background-color:orange;
+    height:100vh; 
+    width: 100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d_none {
+    display:none; 
+
+}
+
+.impressum-footer {
+    height: 100px; 
+    background-color:  #ff8008;
+    margin-bottom: 0px; 
+    margin-top: 499px; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+    color:white; 
+    text-decoration: none;
+    gap: 200px; 
+    font-size: 20px;
+}
+
+.data-protection-footer {
+   height: 100px; 
+   background-color:  #ff8008;
+    margin-bottom: 0px; 
+    margin-top: 399px; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center;
+    color:white; 
+    text-decoration: none;
+    gap: 200px; 
+    font-size: 20px;
+}
+

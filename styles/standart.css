@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./fonts/Raleway-VariableFont_wght.ttf") format('truetype');
+}
+
+body {
+    font-family: "raleway";
+}
+
+h1 {
+    font-size: 32px;
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.noscroll {
+    overflow: hidden;
+}

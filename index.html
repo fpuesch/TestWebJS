@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestellapp</title>
+    <script src="./data.js"></script>
+    <script src="./template.js"></script>
+    <script src="./script.js"></script>
+    <link rel="icon" type="image/png" href="./assets/icons/favicon-16x16.png" width:16px;>
+    <link rel="stylesheet" href="./styles/assets.css">
+    <link rel="stylesheet" href="./styles/standart.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+</head>
+
+<body id="body"  onload="init()">
+    <div class="fullcontent">
+    <header>
+        <img class="icon_header" alt="Symbol der Bestellapp" src="./assets/icons/Logo.png">
+        <img class="menu_header" alt="Menü" src="./assets/icons/menue.png">
+    </header>
+    <div class="content_wrapper">
+        <section class="content">
+            <img class="logo_restaurant" alt="Das Logo des Restaurants Xavers Pizza with Love"
+                src="./assets/icons/pizza.png">
+
+            <div class="restaurant_info">
+                <h1>Xavers Pizza with Love</h1>
+                <p>Bewertung (5 von 5 Sternen)</p>
+            </div>
+            <nav class="nav_bar"> <img class="icon_navbar" src="./assets/icons/rechter_Pfeil.png"> Hauptgerichte
+            </nav>
+            <section class="main_dishes" id="maindishes">
+                <img class="pizza_img" alt="Detailansicht einer Pizza" src="./assets/img/background-pizza.jpg">
+                <h2>Hauptgerichte</h2>
+
+            </section>
+        </section>
+        <section id="basket_wrapper" class="basket_wrapper">
+            <h2>Warenkorb</h2>
+            <div class="basket" id="basket"></div>
+    </div>
+    </section>
+
+    <div class="responsive_basket resp_basket_closed" id="basket_responsive"></div>
+
+    <button id="cart" tabindex="0" aria-label="Warenkorb öffnen" class="button_cart" onclick="openCloseShoppingCart()"> Warenkorb
+    </button>
+    <button id="back" tabindex="0" aria-label="Warenkorb schließen" class="back_cart d_none" onclick="openCloseShoppingCart()"> Zurück
+    </button>
+
+    <div class="overlay d_none" id="overlay_order">
+
+        <div class="thank_you_4_order">
+            <img tabindex="0" aria-label="Schließt das Fenster" role="button" id="close" onclick="closeOverlay()"
+                class="icon_close" src="./assets/icons/schliessen.png">
+            <img class="icon_order" src="./assets/icons/pizza.png">
+            <p>Vielen Dank für Ihre Bestellung! </p>
+        </div>
+    </div>
+
+    </div>
+    <footer>
+        <div class="info-footer"> <img class="icon_footer" src="./assets/icons/android-chrome-192x192.png"><span>(c)
+                Copyright 2025 Bestellapp</span></div>
+        <br>
+        <a aria-label="Weiterleitung zum Impressum" href="impressum.html" target="_blank">IMPRESSUM</a>
+        <a aria-label="Weiterleitung zum Datenschutz" href="datenschutz.html" target="_blank">DATENSCHUTZ</a>
+    </footer>
+
+</body>
+
+</html>
